@@ -1,0 +1,26 @@
+.with{
+  padding:60px 0 59px ;
+  &__block{
+    display: flex;
+    column-gap: 110px;
+  }
+  &__title{
+    @include text($liberation, normal, normal,60px, 80px);
+    color: #000000;
+    margin-bottom: 154px;
+  }
+
+  &__description{
+    @include text( $roboto, normal,normal, 18px,32px);
+    color: #000000;
+    margin-bottom: 35px;
+  }
+  &__link{
+    @include text($roboto,normal,normal,12px,18px);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration:none;
+
+  }
+}

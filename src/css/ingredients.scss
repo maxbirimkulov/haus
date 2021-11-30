@@ -1,0 +1,219 @@
+.ingredients{
+  padding-top: 104px;
+  &__line{
+    margin-top: 140px;
+  }
+  &__title{
+    @include text($liberation,normal, normal,64px, 80px);
+    text-align: center;
+    color: #000000;
+    margin-bottom: 24px;
+  }
+  &__subtitle{
+    @include text($roboto, normal, normal, 12px, 18px);
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 82px;
+  }
+  &__row{
+    display: flex;
+    column-gap: 55px;
+  }
+  &__col{
+    width: 33.3%;
+    text-align: center;
+    &_best{
+      position: relative;
+      &::before{
+        position: absolute;
+        content: 'best seller';
+        @include text($roboto, normal, normal, 12px, 14px);
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF;
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        border-radius: 50%;
+        right: 19px;
+        top: 23px;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+    }
+    &-img{
+      width: 100%;
+      margin-bottom: 19px;
+    }
+    &-title{
+      @include text($liberation, normal,normal, 30px, 44px);
+      color: #000000;
+      margin-bottom: 16px;
+    }
+    &-description{
+      @include text($roboto, normal,normal,16px, 28px);
+      color: #000000;
+      margin-bottom: 27px;
+    }
+    &-btn{
+      width: 180px;
+      height: 52px;
+      background: #191919;
+      border: 1px solid #191919;
+      border-radius: 0;
+      @include text($roboto, normal,normal, 12px, 14px);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .ingredients {
+    padding-top: 80px;
+    &__line{
+      margin-top: 110px;
+    }
+  }
+  .ingredients__col-description {
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .ingredients {
+    padding-top: 60px;
+    &__line{
+      margin-top: 80px;
+    }
+  }
+  .ingredients__title {
+    font-size: 55px;
+    line-height: 60px;;
+  }
+  .ingredients__subtitle {
+    margin-bottom: 55px
+  ;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .ingredients {
+    padding-top: 45px;
+    &__row{
+      column-gap: 40px;
+    }
+  }
+  .ingredients__col_best::before {
+    font-size: 10px;
+    width: 70px;
+    height: 70px;
+    right: 0;
+    top: 0;
+  }
+  .ingredients__title {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  .ingredients__subtitle {
+    margin-bottom: 40px;
+  }
+  .ingredients__col-title {
+    font-size: 23px;
+    margin-bottom: 10px;
+  }
+  .ingredients__col-description {
+    font-size: 13px;
+    margin-bottom: 16px;
+    line-height: 25px;
+  }
+  .ingredients__line {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .ingredients__title {
+    font-size: 37px;
+    line-height: 40px;
+  }
+    .ingredients__subtitle {
+    margin-bottom: 0;
+  }
+  .ingredients__row{
+    flex-wrap: wrap;
+  }
+  .ingredients__col{
+    display: flex;
+    width: 100%;
+    column-gap: 10px;
+    &-right{
+      padding-top: 20px;
+    }
+    &-img{
+      width: 50%;
+    }
+  }
+  .ingredients__col_best::before {
+   top: 0;
+    left: 50%;
+    transform: translate(-100%);
+  }
+  .ingredients__line {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 426px) {
+  .ingredients {
+    padding-top: 35px;
+  }
+  .ingredients__title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .ingredients__col-btn {
+    width: 140px;
+    height: 40px;
+    font-size: 11px;
+  }
+  .ingredients__col-description {
+    font-size: 12px;
+    margin-bottom: 12px;
+    line-height: 25px;
+  }
+  .ingredients__col-title {
+    font-size: 21px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 376px) {
+  .ingredients__title {
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  .ingredients__col-right {
+    padding-top: 10px;
+  }
+  .ingredients__col-title {
+
+    font-size: 20px;
+    line-height: 20px;
+
+  }
+  .ingredients__col-description {
+    line-height: 22px;
+  }
+}

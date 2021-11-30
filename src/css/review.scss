@@ -1,0 +1,31 @@
+.review{
+  padding: 95px 0 50px;
+  background: black;
+  &__row{
+  display: flex;
+    column-gap: 171px;
+  }
+  &__col{
+    width: 33.3%;
+  }
+  &__desc{
+   @include text($roboto, normal, normal,18px, 32px);
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 17px;
+  }
+&__title{
+  @include text($roboto, normal, normal,14px, 21px);
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+  }
+  &__subtitle{
+@include text(&rorboto, normal, normal, 16px, 24px);
+    text-align: center;
+    text-transform: capitalize;
+    color: #8A8A8A;
+    margin-bottom: 82px;
+  }
+}

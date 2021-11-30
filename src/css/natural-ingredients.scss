@@ -1,0 +1,57 @@
+.natural-ingredients {
+  padding: 59.09px 0 50px;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__img {
+    width: 100%;
+  }
+  &__col {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    &-title {
+      @include text($liberation, normal, normal, 30px, 44px);
+      margin-top: 19px;
+      margin-bottom: 19px;
+      color: #000000;
+      &_another {
+        @include text($liberation, normal, normal, 30px, 44px);
+        margin-top: 21px;
+        margin-bottom: 17px;
+        color: #000000;
+      }
+    }
+    &-text {
+      @include text($roboto, normal, normal, 18px, 32px);
+      color: #000000;
+      &_another {
+        @include text($roboto, normal, normal, 18px, 32px);
+        color: #000000;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px){
+  .natural-ingredients__col-title {
+    font-size: 29px;
+    line-height: 35px;
+    margin-bottom: 0;
+  }
+  .natural-ingredients__row{
+    column-gap: 20px;
+  }
+}
+@media (max-width: 992px){
+  .natural-ingredients__row{
+    flex-wrap: wrap-reverse;
+
+  }
+  .natural-ingredients__col{
+flex-direction: row;
+  }
+
+  }

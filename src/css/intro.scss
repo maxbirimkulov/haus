@@ -1,0 +1,34 @@
+.intro{
+  padding-top: 59.09px;
+  &__line{
+    margin-top:94.91px ;
+  }
+  &__img{
+    width: 100%;
+    margin-bottom: 59px;
+  }
+  &__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title{
+    @include text($liberation,normal,normal, 53px, 80px);
+  }
+  &__description{
+    @include text($roboto,normal,normal,18px, 32px);
+  }
+}
+
+@media (max-width: 1200px){
+  .intro__line {
+    margin-top: 75.91px;
+  }
+  .intro__description {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .intro__title{
+
+  }
+}

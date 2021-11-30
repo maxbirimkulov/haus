@@ -1,0 +1,55 @@
+.set{
+  padding: 60px 0 60px;
+  background: url("../images/set/set.png") center/cover no-repeat;
+  &__block{
+    padding: 40px 69px ;
+    background-color: black;
+    max-width: 550px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__title{
+    @include text($liberation, normal, normal,55px, 80px);
+    color: #FFFFFF;
+    margin-bottom: 9px;
+  }
+  &__description{
+    @include text($roboto, normal,normal,16px,28px);
+    color: #FFFFFF;
+    margin-bottom: 26px;
+    &_second{
+      margin-bottom: 17px;
+    }
+  }
+  &__button{
+    width: 180px;
+    height: 52px;
+    @include text($roboto, normal, normal, 12px, 14px);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  &__block2{
+    padding: 30px 134px 32px;
+    background-color: black;
+    color: white;
+    max-width: 550px;
+  }
+  &__menu{
+    display: flex;
+    list-style-type: none;
+    column-gap: 21px;
+  }
+  &__list{
+    @include text($roboto, normal, normal, 12px, 18px);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    &-link{
+      color: white;
+      text-decoration: none;
+    }
+
+  }
+
+}

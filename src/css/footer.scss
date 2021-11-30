@@ -1,0 +1,36 @@
+.footer {
+  background-color: khaki;
+  padding: 45px 0 55px;
+  &__content {
+    display: flex;
+
+    &-post {
+    }
+      &-title{
+        @include text($liberation, normal, normal, 42px, 72px);
+        color: #FFFFFF;
+        margin-bottom: 12px;
+      }
+      &-description {
+        @include text($roboto, normal, normal, 18px, 27px);
+        color: #FFFFFF;
+        margin-bottom: 14px;
+      }
+      &-form {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #8A8A8A;
+        padding: 18px 0 21px;
+      }
+      &-email {
+        border: none;
+        background-color: transparent;
+      }
+      &-btn {
+        @include text($roboto, normal, normal, 12px, 14px);
+        color: #FFFFFF;
+        background-color: transparent;
+        border: none;
+      }
+  }
+}

@@ -1,0 +1,132 @@
+.first-screen{
+  padding: 312px 0 100px;
+  background: #996B60;
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: url("../images/first-screen/bg.png") center/cover no-repeat;
+    top: 0;
+    left: 0;
+    z-index: 2 ;
+  }
+
+  &__row{
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__content{
+    padding-right: 28px;
+  }
+
+  &__title{
+    @include text($liberation, normal, normal, 73px, 96px);
+    color: #FFFFFF;
+    margin-bottom: 34px;
+  }
+  &__subtitle{
+    @include text($roboto, normal, normal, 18px, 32px);
+    color: #FFFFFF;
+    margin-bottom: 46px;
+  &_active{
+    color: red;
+  }
+  }
+  &__btn{
+    width: 180px;
+    height: 52px;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1200px) {
+  .first-screen__content{
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .first-screen__content{
+    text-align: right;
+  }
+  .first-screen__title {
+    font-size: 67px;
+    line-height: 75px;
+    margin-bottom: 30px;
+  }
+  .first-screen__subtitle {
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .first-screen {
+    padding: 225px 0 80px;
+    &::before {
+      width: 100%;
+    }
+     &::after{
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-color: #00000050;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 3;
+    }
+    &__content{
+      position: relative;
+      z-index: 4;
+    }
+    &__title {
+      font-size: 65px;
+      line-height: 70px;
+      margin-bottom: 20px;
+    }
+    &__btn {
+      width: 160px;
+      color: white;
+      height: 45px;
+      background-color: transparent;
+      border: 1px solid #FFFFFF;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .first-screen {
+    padding: 175px 0 60px;
+    &__title {
+      font-size: 55px;
+      line-height: 50px;
+      margin-bottom: 15px;
+    }
+    .first-screen__subtitle {
+
+      margin-bottom: 30px;
+    }
+    &__row {
+      justify-content: center;
+    }
+    &__content{
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 376px) {
+  .first-screen {
+    padding: 130px 0 40px;
+    &__title {
+      font-size: 45px;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.natural-ingredients {
+  padding: 59.09px 0 50px;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__img {
+    width: 880px;
+    height: 608px;
+  }
+  &__col {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    &-title {
+      margin-top: 19px;
+      margin-bottom: 19px;
+      font-family: Liberation Serif, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 44px;
+      color: #000000;
+      &_another {
+        margin-top: 21px;
+        margin-bottom: 17px;
+        font-family: Liberation Serif, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 44px;
+        color: #000000;
+      }
+    }
+    &-text {
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 32px;
+      color: #000000;
+      &_another {
+        font-family: Roboto, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 32px;
+        color: #000000;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

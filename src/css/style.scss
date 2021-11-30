@@ -1,0 +1,45 @@
+@import "../fonts/Roboto/stylesheet.css";
+@import "enhancer";
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.shipping{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  @include text($roboto, normal, normal, 14px, 18px);
+  background: #191919;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 16px 0;
+}
+
+.line{
+  height: 1px;
+  background-color: grey;
+}
+
+@import "header";
+@import "first-screen";
+@import "info";
+@import "ingredients";
+@import "intro";
+@import "natural-ingredients";
+@import "review";
+@import "with";
+@import "set";
+@import "footer";
+@import "burger";

@@ -1,0 +1,26 @@
+.intro {
+  padding: 59.09px 0 94.91px;
+}
+.intro__img {
+  width: 100%;
+}
+.intro__row {
+  display: flex;
+  justify-content: space-between;
+}
+.intro__title {
+  font-family: Liberation Serif, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 53px;
+  line-height: 80px;
+}
+.intro__description {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+/*# sourceMappingURL=intro.css.map */
