@@ -43,3 +43,111 @@
 @import "set";
 @import "footer";
 @import "burger";
+
+@media (max-width: 992px) {
+  .natural-ingredients__img {
+    width: 50%;
+  }
+  .natural-ingredients__row {
+
+    justify-content: center;
+  }
+  .natural-ingredients__col-text {
+
+    font-size: 16px;
+    line-height: 25px;
+
+  }
+  .natural-ingredients__col-title {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .natural-ingredients__col {
+    flex-direction: row;
+    column-gap: 40px;
+  }
+  .with__box{
+    width: 50%;
+  }
+
+  .with__box img{
+    width: 100%;
+  }
+  .with__title {
+
+    font-size: 30px;
+    line-height: 33px;
+    margin-bottom: 25px;
+  }
+  .with__description {
+
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .first-screen__title br {
+   display: none;
+  }
+  .first-screen__content{
+    width: 100%;
+  }
+  .review__row {
+
+   column-gap: 20px;
+  }
+  .with__block {
+    column-gap: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .intro__row {
+
+    flex-direction: column;
+  }
+  .intro__title {
+
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+  .intro__description {
+    line-height: 20px;
+    text-align: center;
+  }
+  .intro__description br {
+    display: none;
+  }
+  .natural-ingredients__img {
+    width: 75%;
+  }
+  .natural-ingredients__col {
+    flex-direction: column;
+  }
+  .with__block {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .with__box {
+    width: 100%;  
+  }
+  
+}
+
+
+@media (max-width: 425px) {
+  .review__row {
+    column-gap: 20px;
+    flex-direction: column;
+  }
+  .review__col {
+    width: 100%;
+  }
+  .set__block2 {
+      padding: 30px 38px 32px;  
+  }
+
+}
