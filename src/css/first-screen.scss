@@ -44,8 +44,13 @@
 }
 
 @media (max-width: 1200px) {
-  .first-screen__content{
+  .first-screen__content {
     padding-right: 0;
+    padding-left: 15px;
+    width: 50%;
+  }
+  .natural-ingredients__img {
+    width: 80%;
   }
 }
 
@@ -63,7 +68,13 @@
     line-height: 25px;
     margin-bottom: 40px;
   }
+  .with__title {
+    font-size: 43px;
+    line-height: 70px;
+    margin-bottom: 100px;
+  }
 }
+
 
 @media (max-width: 768px) {
   .first-screen {
